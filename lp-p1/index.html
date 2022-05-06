@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submissões Mooshak Projeto LP</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        font-family: "Fira Mono", monospace;
+        background: #151515;
+        color: white;
+
+        --c1: #118ab2;
+        --c2: #2a9d8f;
+        --c3: #e9c46a;
+        --c4: #f4a261;
+        --c5: #e76f51;
+      }
+
+      body {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      .overview-list span,
+      .overview-list strong {
+        color: var(--c4);
+      }
+      .list span,
+      .list strong {
+        color: var(--c4);
+      }
+      li {
+        margin: 5px 0;
+      }
+      .grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .grid img {
+        margin: 0 10px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: var(--c2)">Submissões Mooshak LP</h1>
+      <h2 style="color: var(--c1)">Projeto Kakuro</h2>
+    </header>
+    <main>
+      <h3 style="color: var(--c3)">Overview</h3>
+      <ul class="overview-list">
+        <li>
+          <span class="mdi mdi-send-check"></span>
+          <strong>4330</strong> submissões
+        </li>
+        <li>
+          <span class="mdi mdi-account-group"></span>
+          <strong>288</strong> alunos submeteram o seu projeto
+        </li>
+        <li>
+          <span class="mdi mdi-account-clock"></span>
+          <strong>172</strong> alunos submeteram nas 24h antes da deadline
+        </li>
+        <li>
+          <span class="mdi mdi-clock-alert-outline"></span>
+          <strong>35</strong> alunos submeteram
+          <strong>pela primeira vez</strong> nas 24h antes da deadline
+        </li>
+      </ul>
+
+      <h3 style="color: var(--c5)">Evolução de Submissões</h3>
+
+      <ul class="list">
+        <li>
+          Houve <strong>36x</strong> mais submissões no último dia do que no
+          primeiro
+        </li>
+      </ul>
+
+      <div class="grid">
+        <img src="img/sub-per-h.png" />
+        <img src="img/first-sub-per-d.png" />
+        <img src="img/sub-per-h-cum.png" />
+      </div>
+
+      <div class="grid">
+        <img src="img/sub-result-per-min.png" />
+      </div>
+
+      <h3 style="color: var(--c5)">Múltiplas Submissões</h3>
+
+      <ul class="list">
+        <li>
+          <span class="mdi mdi-arrow-up-bold-outline"></span>
+          <strong>18</strong> alunos submeteram <strong>3</strong> e
+          <strong>7</strong> vezes
+        </li>
+        <li>
+          <span class="mdi mdi-plus-box-multiple-outline"></span>
+          <strong>1</strong> aluno submeteu <strong>67</strong> vezes
+        </li>
+      </ul>
+
+      <div class="grid">
+        <img src="img/student-count-per-sub-count.png" />
+      </div>
+
+      <h3 style="color: var(--c5)">Resultado das Submissões</h3>
+
+      <ul class="list">
+        <li>
+          <span class="mdi mdi-medal"></span>
+          Dos 288 alunos que submeteram, <strong>76</strong> tiveram pontuação
+          máxima
+        </li>
+        <li>
+          <span class="mdi mdi-emoticon-sad"></span>
+          <strong>10</strong> alunos terminaram com 0
+        </li>
+      </ul>
+
+      <div class="grid">
+        <img src="img/histogram-results.png" />
+      </div>
+
+      <ul class="list">
+        <li>
+          <span class="mdi mdi-scale-balance"></span>
+          A média do resultado final foi
+          <strong style="color: var(--c4)">1110</strong> no geral, sendo
+          <strong style="color: var(--c1)">1155</strong> em
+          <strong style="color: var(--c1)">LEIC-A</strong> e
+          <strong style="color: var(--c2)">1025</strong> em
+          <strong style="color: var(--c2)">LEIC-T</strong>.
+        </li>
+        <li>
+          <span class="mdi mdi-format-align-middle"></span>
+          A mediana do resultado final foi
+          <strong style="color: var(--c4)">1225</strong> no geral, sendo
+          <strong style="color: var(--c1)">1325</strong> em
+          <strong style="color: var(--c1)">LEIC-A</strong> e
+          <strong style="color: var(--c2)">1050</strong> em
+          <strong style="color: var(--c2)">LEIC-T</strong>.
+        </li>
+      </ul>
+
+      <div class="grid">
+        <img src="img/distribution-per-degree.png" />
+      </div>
+
+      <ul class="list">
+        <li>
+          <span class="mdi mdi-emoticon-dead"></span>
+          Os <strong>10</strong> alunos que terminaram o projeto com
+          <strong>0</strong> valores tiveram
+          <strong style="color: var(--c5)">Compile Time Error</strong>.
+        </li>
+      </ul>
+
+      <div class="grid">
+        <img src="img/distribution-errors.png" />
+      </div>
+
+      <h3 style="color: var(--c5)">Last Day Heros</h3>
+
+      <div class="grid">
+        <img src="img/histogram-sub-last-24h.png" />
+        <img src="img/histogram-result-last-24h.png" />
+      </div>
+    </main>
+  </body>
+</html>

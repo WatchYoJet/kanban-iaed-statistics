@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submissões Mooshak Projeto 1 IAED</title>
+    <title>Estatísticas Submissões Projetos IST</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
@@ -33,165 +33,52 @@
         margin: auto;
       }
 
-      ul li {
-        list-style: none;
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
       }
 
-      .overview-list span,
-      .overview-list strong {
-        color: var(--c4);
+      .button {
+        background: linear-gradient(
+          320deg,
+          #151515 0%,
+          var(--gradient-color) 100%
+        );
+        border-radius: 10px;
+        flex-grow: 1;
+        height: 150px;
+        padding: 50px;
+        font-size: 1.5rem;
+        display: block;
+        text-decoration: none;
+        color: inherit;
       }
-      .list span,
-      .list strong {
-        color: var(--c4);
-      }
-      li {
-        margin: 5px 0;
-      }
-      .grid {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-      .grid img {
-        margin: 0 10px;
-        max-width: 100%;
+
+      .button .subtitle {
+        font-size: 1.2rem;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1 style="color: var(--c2)">Submissões Mooshak IAED</h1>
-      <h2 style="color: var(--c1)">Projeto 1 Kanban</h2>
+      <h1 style="color: var(--c1)">Estatísticas Submissões Projetos IST</h1>
     </header>
     <main>
-      <h3 style="color: var(--c3)">Overview</h3>
-      <ul class="overview-list">
-        <li>
-          <span class="mdi mdi-send-check"></span>
-          <strong>4078</strong> submissões
-        </li>
-        <li>
-          <span class="mdi mdi-account-group"></span>
-          <strong>387</strong> alunos submeteram o seu projeto
-        </li>
-        <li>
-          <span class="mdi mdi-account-clock"></span>
-          <strong>330</strong> alunos submeteram nas 24h antes da deadline
-        </li>
-        <li>
-          <span class="mdi mdi-clock-alert-outline"></span>
-          <strong>109</strong> alunos submeteram
-          <strong>pela primeira vez</strong> nas 24h antes da deadline
-        </li>
-      </ul>
-
-      <h3 style="color: var(--c5)">Evolução de Submissões</h3>
-
-      <ul class="list">
-        <li>
-          Houve <strong>6x</strong> mais submissões no último dia do que no
-          primeiro
-        </li>
-      </ul>
-
       <div class="grid">
-        <img src="img/sub-per-h.png" />
-        <img src="img/first-sub-per-d.png" />
-        <img src="img/sub-per-h-cum.png" />
-      </div>
-
-      <div class="grid">
-        <img src="img/sub-result-per-min.png" />
-      </div>
-
-      <h3 style="color: var(--c5)">Múltiplas Submissões</h3>
-
-      <ul class="list">
-        <li>
-          <span class="mdi mdi-arrow-up-bold-outline"></span>
-          <strong>33</strong> alunos submeteram <strong>6</strong> vezes
-        </li>
-        <li>
-          <span class="mdi mdi-plus-box-multiple-outline"></span>
-          <strong>1</strong> aluno submeteu <strong>73</strong> vezes
-        </li>
-      </ul>
-
-      <div class="grid">
-        <img src="img/student-count-per-sub-count.png" />
-      </div>
-
-      <h3 style="color: var(--c5)">Resultado das Submissões</h3>
-
-      <ul class="list">
-        <li>
-          <span class="mdi mdi-medal"></span>
-          Dos 387 alunos que submeteram, <strong>85</strong> tiveram pontuação
-          máxima
-        </li>
-        <li>
-          <span class="mdi mdi-emoticon-sad"></span>
-          <strong>20</strong> alunos terminaram com 0
-        </li>
-      </ul>
-
-      <div class="grid">
-        <img src="img/histogram-results.png" />
-      </div>
-
-      <ul class="list">
-        <li>
-          <span class="mdi mdi-scale-balance"></span>
-          A média do resultado final foi
-          <strong style="color: var(--c4)">58</strong> no geral, sendo
-          <strong style="color: var(--c1)">62</strong> em
-          <strong style="color: var(--c1)">LEIC-A</strong>,
-          <strong style="color: var(--c2)">61</strong> em
-          <strong style="color: var(--c2)">LEIC-T</strong> e
-          <strong style="color: var(--c3)">44</strong> em
-          <strong style="color: var(--c3)">LETI</strong>.
-        </li>
-        <li>
-          <span class="mdi mdi-format-align-middle"></span>
-          A mediana do resultado final foi
-          <strong style="color: var(--c4)">68</strong> no geral, sendo
-          <strong style="color: var(--c1)">71</strong> em
-          <strong style="color: var(--c1)">LEIC-A</strong>,
-          <strong style="color: var(--c2)">71</strong> em
-          <strong style="color: var(--c2)">LEIC-T</strong> e
-          <strong style="color: var(--c3)">55</strong> em
-          <strong style="color: var(--c3)">LETI</strong>.
-        </li>
-      </ul>
-
-      <div class="grid">
-        <img src="img/distribution-per-degree.png" />
-      </div>
-
-      <ul class="list">
-        <li>
-          <span class="mdi mdi-emoticon-dead"></span>
-          Dos <strong>20</strong> alunos que terminaram o projeto com
-          <strong>0</strong> valores,
-          <strong style="color: var(--c5)">16</strong> tiveram
-          <strong style="color: var(--c5)">Compile Time Error</strong>,
-          <strong style="color: var(--c5)">3</strong> tiveram
-          <strong style="color: var(--c5)">Runtime Error</strong> e
-          <strong style="color: var(--c5)">1</strong> teve
-          <strong style="color: var(--c5)">Time Limit Exceeded</strong>.
-        </li>
-      </ul>
-
-      <div class="grid">
-        <img src="img/distribution-errors.png" />
-      </div>
-
-      <h3 style="color: var(--c5)">Last Day Heros</h3>
-
-      <div class="grid">
-        <img src="img/histogram-sub-last-24h.png" />
-        <img src="img/histogram-result-last-24h.png" />
+        <a href="iaed-p1/" class="button" style="--gradient-color: var(--c2)">
+          <span class="mdi mdi-language-c"></span> IAED Projeto 1<br />
+          <span class="subtitle">2020/2021 - Semestre 2</span>
+        </a>
+        <a href="lp-p1/" class="button" style="--gradient-color: var(--c3)">
+          <span class="mdi mdi-brain"></span> LP Projeto<br />
+          <span class="subtitle">2020/2021 - Semestre 2</span>
+        </a>
+        <a href="iaed-p2/" class="button" style="--gradient-color: var(--c4)">
+          <span class="mdi mdi-language-c"></span> IAED Projeto 2<br />
+          <span class="subtitle">2020/2021 - Semestre 2</span>
+        </a>
       </div>
     </main>
   </body>
